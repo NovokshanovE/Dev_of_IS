@@ -6,7 +6,7 @@ app = Flask(__name__)
 app.register_blueprint(blueprint_query, url_prefix='/zaproses')
 
 
-with open('data_files/dbconfig.json', 'r') as f:
+with open('data_file/db_config.json', 'r') as f:
     db_config = json.load(f)
 app.config['dbconfig'] = db_config
 
